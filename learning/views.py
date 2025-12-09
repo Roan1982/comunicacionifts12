@@ -42,11 +42,47 @@ def submit_quiz(request, quiz_id):
         questions = quiz.question_set.all()
         score = 0
         total = questions.count()
+        results = []
         for question in questions:
-            answer = request.POST.get(f'question_{question.id}')
-            if answer and int(answer) == question.correct_answer:
+            user_answer = request.POST.get(f'question_{question.id}')
+            correct = user_answer and int(user_answer) == question.correct_answer
+            if correct:
                 score += 1
-        return render(request, 'learning/results.html', {'score': score, 'total': total, 'quiz_id': quiz_id})
+            results.append({
+                'question': question.question_text,
+                'options': [question.option1, question.option2, question.option3],
+                'user_answer': int(user_answer) if user_answer else None,
+                'correct_answer': question.correct_answer,
+                'is_correct': correct
+            })
+        percentage = (score / total * 100) if total > 0 else 0
+        
+        # Mark topic as completed if quiz passed (e.g., 70% or more)
+        if quiz.topic and percentage >= 70:
+            UserProgress.objects.update_or_create(
+                user=request.user,
+                topic=quiz.topic,
+                defaults={'completed': True}
+            )
+        
+        if score == total:
+            message = "¡Excelente! Has acertado todas las preguntas."
+            message_class = "text-success"
+        elif score >= total / 2:
+            message = "Buen trabajo. Revisa los temas que no entendiste."
+            message_class = "text-warning"
+        else:
+            message = "Necesitas estudiar más. Revisa todos los temas."
+            message_class = "text-danger"
+        return render(request, 'learning/results.html', {
+            'score': score, 
+            'total': total, 
+            'percentage': percentage, 
+            'message': message, 
+            'message_class': message_class, 
+            'quiz_id': quiz_id,
+            'results': results
+        })
     return redirect('quiz', quiz_id=quiz_id)
 
 @login_required

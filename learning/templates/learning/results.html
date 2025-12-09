@@ -11,15 +11,30 @@
                     <div class="mb-3">
                         <h4>Tu puntuación: {{ score }} / {{ total }}</h4>
                         <div class="progress mb-3">
-                            <div class="progress-bar {% if score == total %}bg-success{% elif score >= total|div:2 %}bg-warning{% else %}bg-danger{% endif %}" role="progressbar" style="width: {{ score|mul:100|div:total }}%;" aria-valuenow="{{ score }}" aria-valuemin="0" aria-valuemax="{{ total }}">{{ score }}/{{ total }}</div>
+                            <div class="progress-bar {% if score == total %}bg-success{% elif percentage >= 50 %}bg-warning{% else %}bg-danger{% endif %}" role="progressbar" style="width: {{ percentage }}%;" aria-valuenow="{{ score }}" aria-valuemin="0" aria-valuemax="{{ total }}">{{ score }}/{{ total }}</div>
                         </div>
-                        {% if score == total %}
-                            <p class="text-success">¡Excelente! Has acertado todas las preguntas.</p>
-                        {% elif score >= total|div:2 %}
-                            <p class="text-warning">Buen trabajo. Revisa los temas que no entendiste.</p>
-                        {% else %}
-                            <p class="text-danger">Necesitas estudiar más. Revisa todos los temas.</p>
-                        {% endif %}
+                        <p class="{{ message_class }}">{{ message }}</p>
+                        <details class="mb-3">
+                            <summary class="btn btn-outline-info">Ver Detalles de las Preguntas</summary>
+                            <div class="mt-3">
+                                {% for result in results %}
+                                    <div class="card mb-2 {% if result.is_correct %}border-success{% else %}border-danger{% endif %}">
+                                        <div class="card-body">
+                                            <h6>{{ forloop.counter }}. {{ result.question }}</h6>
+                                            <ul class="list-group list-group-flush">
+                                                {% for option in result.options %}
+                                                    <li class="list-group-item {% if result.correct_answer == forloop.counter %}bg-success text-white{% elif result.user_answer == forloop.counter and not result.is_correct %}bg-danger text-white{% endif %}">
+                                                        {{ option }}
+                                                        {% if result.correct_answer == forloop.counter %} (Correcta){% endif %}
+                                                        {% if result.user_answer == forloop.counter and not result.is_correct %} (Tu respuesta){% endif %}
+                                                    </li>
+                                                {% endfor %}
+                                            </ul>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </details>
                     </div>
                     <a href="{% url 'topics' %}" class="btn btn-primary">Volver a Temas</a>
                     <a href="{% url 'quiz' quiz_id %}" class="btn btn-secondary">Repetir Quiz</a>
