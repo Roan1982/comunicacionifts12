@@ -1,0 +1,11 @@
+{% extends 'learning/base.html' %}
+
+{% block title %}Resultados - Aprende Comunicación{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>Resultados</h2>
+        <p>Tu puntuación: {{ score }} / {{ total }}</p>
+        <a href="{% url 'topics' %}">Volver a Temas</a>
+    </section>
+{% endblock %}

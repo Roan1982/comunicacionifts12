@@ -1,0 +1,20 @@
+{% extends 'learning/base.html' %}
+
+{% block title %}Teoría - Aprende Comunicación{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>Teoría de Comunicación</h2>
+        <p>Progreso: <span id="progress-count">{{ progress|length }}</span>/<span id="total-topics">{{ topics|length }}</span></p>
+        <div id="topics">
+            {% for topic in topics %}
+                <div class="topic">
+                    <input type="checkbox" {% if progress|get:topic.id %}checked{% endif %} onchange="toggleProgress({{ topic.id }})">
+                    <h3>{{ topic.title }}</h3>
+                    <p>{{ topic.content }}</p>
+                </div>
+            {% endfor %}
+        </div>
+        <a href="{% url 'quiz' 1 %}">Ir a Evaluaciones</a>
+    </section>
+{% endblock %}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Comunicación</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Aprende sobre Comunicación</h1>
+        <nav>
+            <button onclick="showSection('teoria')">Teoría</button>
+            <button onclick="showSection('evaluaciones')">Evaluaciones</button>
+        </nav>
+    </header>
+    <main id="content">
+        <section id="teoria" class="section active">
+            <h2>Teoría de Comunicación</h2>
+            <p>Marca los temas que has estudiado para seguir tu progreso.</p>
+            <div id="progress">Progreso: <span id="progress-count">0</span>/<span id="total-topics">0</span></div>
+            <div id="topics">
+                <!-- Contenido basado en el PDF -->
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Introducción a la Comunicación</h3>
+                    <p>La comunicación es el proceso de transmitir información, ideas, emociones y significados entre individuos, grupos o entidades. Incluye elementos clave: el emisor (quien envía el mensaje), el mensaje (contenido transmitido), el canal (medio utilizado), el receptor (quien recibe), el contexto (situación) y el feedback (respuesta). Puede ser verbal (palabras), no verbal (gestos, tono), escrita, visual o digital. Es fundamental en la sociedad para construir relaciones, compartir conocimientos y coordinar acciones.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Medios de Comunicación</h3>
+                    <p>Los medios de comunicación son canales que facilitan la transmisión de mensajes. Pueden clasificarse en: verbales (hablada, como conversaciones), no verbales (gestos, expresiones faciales, lenguaje corporal), escritos (correos, libros, periódicos), visuales (imágenes, videos, gráficos) y digitales (internet, redes sociales). Cada medio tiene características únicas: alcance, velocidad, interactividad y capacidad para influir en la percepción. Los medios masivos (prensa, radio, TV, internet) llegan a audiencias amplias y juegan un rol crucial en la formación de opinión pública.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Comunicación Interpersonal</h3>
+                    <p>Es la interacción directa y bidireccional entre dos o más personas, generalmente cara a cara. Requiere habilidades como la escucha activa (prestar atención y responder), la empatía (comprender emociones ajenas), la claridad en la expresión y el manejo de conflictos. Factores como el lenguaje corporal, el tono de voz y el contexto influyen en su efectividad. Es esencial para construir relaciones personales, resolver problemas y fomentar el entendimiento mutuo.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Comunicación Masiva</h3>
+                    <p>Involucra medios como televisión, radio, periódicos, internet y redes sociales para llegar a grandes audiencias simultáneamente. Características: unidireccional (del emisor al receptor), masiva (amplio alcance), impersonal y a menudo comercial. Influye en la cultura, la política y la economía al formar opiniones, promover productos y difundir información. Desafíos incluyen la desinformación y la concentración de poder en pocas empresas mediáticas.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Barreras en la Comunicación</h3>
+                    <p>Factores que impiden una comunicación efectiva: físicas (ruido ambiental, distancia), psicológicas (prejuicios, emociones), semánticas (lenguaje ambiguo, jerga), culturales (diferencias en valores), tecnológicas (fallos en equipos) y organizacionales (jerarquías). Superarlas requiere claridad, feedback, adaptación al receptor y uso de canales apropiados. Identificar barreras mejora la efectividad en cualquier contexto comunicativo.</p>
+                </div>
+                <div class="topic">
+                    <h3>Industria Cultural y Medios de Comunicación</h3>
+                    <p>Según Adorno, la industria cultural produce mensajes multiestratificados que manipulan al público a niveles manifiestos y latentes. Los mass media no son solo la suma de sus mensajes, sino que incluyen significados superpuestos que colaboran en el resultado.</p>
+                </div>
+                <div class="topic">
+                    <h3>Efectos de los Media</h3>
+                    <p>Los medios buscan seducir a los espectadores en varios niveles psicológicos. El mensaje oculto puede ser más importante que el evidente, penetrando en el cerebro sin ser controlado por la conciencia. Cualquier análisis que ignore esta estructura multiestratificada y los efectos de los mensajes latentes se considera limitado y equivocado.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Manipulación y Dominación</h3>
+                    <p>La industria cultural actúa como forma de dominación en sociedades desarrolladas. Los espectáculos televisivos apuntan a producir mediocridad, inercia intelectual y credulidad, armonizando con credos totalitarios aunque el mensaje superficial sea antitotalitario. Los mensajes aparentan ser frívolos pero ratifican el estado de sujeción, asimilando órdenes sin que el espectador se dé cuenta.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Estructura Multiestratificada de los Mensajes</h3>
+                    <p>Los mensajes tienen niveles manifiestos (explícitos) y latentes (ocultos). Los latentes escapan a los controles de la conciencia y penetran sin resistencias psicológicas, canalizando la reacción del público. Las relaciones entre estos niveles no son casuales, sino estratégicas para manipular y dominar.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Teoría de la Comunicación de Shannon y Weaver (1949)</h3>
+                    <p>Esta teoría presenta un modelo lineal de comunicación compuesto por seis elementos: fuente (emisor), codificador, mensaje, canal, decodificador y receptor. Incluye el concepto de ruido (interferencias) que puede distorsionar el mensaje. Es un modelo técnico que se enfoca en la transmisión eficiente de información, pero ha sido criticado por ser demasiado simplista al ignorar el contexto social y el feedback bidireccional.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Modelo de Lasswell (1948)</h3>
+                    <p>Harold Lasswell propuso esta fórmula: ¿Quién dice qué, en qué canal, a quién, con qué efecto? Este modelo analiza la comunicación masiva identificando los componentes clave: el comunicador, el contenido, el medio, el receptor y el impacto. Es útil para estudiar los procesos de comunicación en los medios de masas, aunque no explica el proceso en detalle.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Teoría de la Agenda Setting (McCombs y Shaw, 1972)</h3>
+                    <p>Los medios no dicen a la gente qué pensar, pero sí qué pensar. Esta teoría explica cómo los medios establecen la agenda de temas importantes, influyendo en la percepción pública de cuáles son los problemas más relevantes. El framing (enmarcado) complementa esta teoría, determinando cómo se presenta la información.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Teoría de los Usos y Gratificaciones (Katz, Blumler, 1974)</h3>
+                    <p>Esta teoría se centra en el receptor: ¿por qué las personas usan los medios? Propone que los individuos buscan satisfacer necesidades como información, entretenimiento, integración social, identidad personal y escape de la realidad. Es una perspectiva activa del receptor, en contraste con modelos pasivos.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Teoría de la Espiral del Silencio (Noelle-Neumann, 1974)</h3>
+                    <p>Las personas tienden a no expresar opiniones que perciben como minoritarias por miedo al aislamiento social. Esto crea una "espiral" donde las opiniones mayoritarias se refuerzan y las minoritarias se silencian. Es relevante en contextos de opinión pública y medios sociales.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Teoría Hipodérmica o de la Bala Mágica (1920s-1930s)</h3>
+                    <p>Los medios inyectan mensajes directamente en la mente del receptor como una bala, causando efectos inmediatos y uniformes. Aunque desmentida, explica el pánico inicial ante los medios masivos y destaca la influencia potencial de la propaganda.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Teoría de la Dependencia de los Medios (Ball-Rokeach, DeFleur, 1976)</h3>
+                    <p>La dependencia de los individuos hacia los medios para satisfacer necesidades crea poder social. Cuando hay incertidumbre (como en crisis), la dependencia aumenta, y los medios pueden influir más en actitudes y comportamientos.</p>
+                </div>
+                <div class="topic">
+                    <input type="checkbox" onchange="updateProgress()">
+                    <h3>Evolución de los Medios de Comunicación</h3>
+                    <p>La comunicación ha evolucionado desde formas primitivas hasta digitales. Incluye: el servicio postal (siglo XVII), los trenes que facilitaron el transporte de información, el telégrafo (1837) para mensajes eléctricos, la fotografía (1826) para imágenes fijas, el cine (1895) para narrativas visuales, la radio (1920) para audio masivo, el teléfono (1876) para comunicación interpersonal, la televisión (1920s) para video en vivo, e internet (1960s-1990s) para comunicación global digital. Cada medio transformó la sociedad y la forma de compartir información.</p>
+                </div>
+            </div>
+        </section>
+        <section id="evaluaciones" class="section">
+            <h2>Evaluaciones</h2>
+            <div id="quizzes">
+                <button onclick="loadQuiz('quiz1')">Evaluación 1: Conceptos Básicos</button>
+                <button onclick="loadQuiz('quiz2')">Evaluación 2: Medios de Comunicación</button>
+                <button onclick="loadQuiz('quiz3')">Evaluación 3: Barreras en la Comunicación</button>
+                <button onclick="loadQuiz('quiz4')">Evaluación 4: Industria Cultural</button>
+                <button onclick="loadQuiz('quiz5')">Evaluación 5: Efectos de los Media</button>
+                <button onclick="loadQuiz('quiz6')">Evaluación 6: Teorías Clásicas</button>
+                <button onclick="loadQuiz('quiz7')">Evaluación 7: Teorías de Recepción</button>
+                <button onclick="loadQuiz('quiz8')">Evaluación 8: Evolución de los Medios</button>
+                <!-- Más evaluaciones -->
+            </div>
+            <div id="quiz-container" style="display: none;">
+                <h3 id="quiz-title"></h3>
+                <div id="questions"></div>
+                <button onclick="submitQuiz()">Enviar Evaluación</button>
+                <div id="results" style="display: none;"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

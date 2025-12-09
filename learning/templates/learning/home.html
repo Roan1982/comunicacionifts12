@@ -1,0 +1,15 @@
+{% extends 'learning/base.html' %}
+
+{% block title %}Inicio - Aprende Comunicación{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>Bienvenido</h2>
+        <p>Esta plataforma te ayuda a aprender sobre comunicación. Regístrate o inicia sesión para acceder a los temas y evaluaciones.</p>
+        {% if not user.is_authenticated %}
+            <a href="{% url 'login' %}">Iniciar Sesión</a> | <a href="{% url 'register' %}">Registrarse</a>
+        {% else %}
+            <a href="{% url 'topics' %}">Comenzar a Aprender</a>
+        {% endif %}
+    </section>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'learning/base.html' %}
+
+{% block title %}{{ quiz.title }} - Aprende Comunicación{% endblock %}
+
+{% block content %}
+    <section>
+        <h2>{{ quiz.title }}</h2>
+        <form method="post" action="{% url 'submit_quiz' quiz.id %}">
+            {% csrf_token %}
+            {% for question in questions %}
+                <div class="question">
+                    <p>{{ question.question_text }}</p>
+                    <label><input type="radio" name="question_{{ question.id }}" value="1"> {{ question.option1 }}</label><br>
+                    <label><input type="radio" name="question_{{ question.id }}" value="2"> {{ question.option2 }}</label><br>
+                    <label><input type="radio" name="question_{{ question.id }}" value="3"> {{ question.option3 }}</label><br>
+                </div>
+            {% endfor %}
+            <button type="submit">Enviar Evaluación</button>
+        </form>
+    </section>
+{% endblock %}
