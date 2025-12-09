@@ -23,8 +23,11 @@ def home(request):
 @login_required
 def topics(request):
     topics = Topic.objects.all().order_by('order')
-    progress = {p.topic.id: p.completed for p in UserProgress.objects.filter(user=request.user)}
-    return render(request, 'learning/topics.html', {'topics': topics, 'progress': progress})
+    completed_topics = set(p.topic.id for p in UserProgress.objects.filter(user=request.user, completed=True))
+    total_topics = topics.count()
+    completed_count = len(completed_topics)
+    progress_percentage = (completed_count / total_topics * 100) if total_topics > 0 else 0
+    return render(request, 'learning/topics.html', {'topics': topics, 'completed_topics': completed_topics, 'progress_percentage': progress_percentage})
 
 @login_required
 def quiz(request, quiz_id):
@@ -43,7 +46,7 @@ def submit_quiz(request, quiz_id):
             answer = request.POST.get(f'question_{question.id}')
             if answer and int(answer) == question.correct_answer:
                 score += 1
-        return render(request, 'learning/results.html', {'score': score, 'total': total})
+        return render(request, 'learning/results.html', {'score': score, 'total': total, 'quiz_id': quiz_id})
     return redirect('quiz', quiz_id=quiz_id)
 
 @login_required

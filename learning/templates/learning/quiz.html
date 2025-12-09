@@ -3,19 +3,42 @@
 {% block title %}{{ quiz.title }} - Aprende Comunicación{% endblock %}
 
 {% block content %}
-    <section>
-        <h2>{{ quiz.title }}</h2>
-        <form method="post" action="{% url 'submit_quiz' quiz.id %}">
-            {% csrf_token %}
-            {% for question in questions %}
-                <div class="question">
-                    <p>{{ question.question_text }}</p>
-                    <label><input type="radio" name="question_{{ question.id }}" value="1"> {{ question.option1 }}</label><br>
-                    <label><input type="radio" name="question_{{ question.id }}" value="2"> {{ question.option2 }}</label><br>
-                    <label><input type="radio" name="question_{{ question.id }}" value="3"> {{ question.option3 }}</label><br>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h2 class="card-title mb-0">{{ quiz.title }}</h2>
                 </div>
-            {% endfor %}
-            <button type="submit">Enviar Evaluación</button>
-        </form>
-    </section>
+                <div class="card-body">
+                    <form method="post" action="{% url 'submit_quiz' quiz.id %}">
+                        {% csrf_token %}
+                        {% for question in questions %}
+                            <div class="mb-4">
+                                <h5>{{ forloop.counter }}. {{ question.question_text }}</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question_{{ question.id }}" value="1" id="q{{ question.id }}1">
+                                    <label class="form-check-label" for="q{{ question.id }}1">
+                                        {{ question.option1 }}
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question_{{ question.id }}" value="2" id="q{{ question.id }}2">
+                                    <label class="form-check-label" for="q{{ question.id }}2">
+                                        {{ question.option2 }}
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="question_{{ question.id }}" value="3" id="q{{ question.id }}3">
+                                    <label class="form-check-label" for="q{{ question.id }}3">
+                                        {{ question.option3 }}
+                                    </label>
+                                </div>
+                            </div>
+                        {% endfor %}
+                        <button type="submit" class="btn btn-primary">Enviar Evaluación</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

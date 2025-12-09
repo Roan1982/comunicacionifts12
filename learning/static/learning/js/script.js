@@ -8,11 +8,35 @@ function toggleProgress(topicId) {
     })
     .then(response => response.json())
     .then(data => {
-        // Update progress count
-        const checked = document.querySelectorAll('.topic input:checked').length;
-        document.getElementById('progress-count').textContent = checked;
+        // Update progress bar
+        const totalTopics = document.querySelectorAll('.accordion-item').length;
+        const checkedTopics = document.querySelectorAll('.form-check-input:checked').length;
+        const progressBar = document.querySelector('.progress-bar');
+        const percentage = (checkedTopics / totalTopics) * 100;
+        progressBar.style.width = percentage + '%';
+        progressBar.setAttribute('aria-valuenow', checkedTopics);
+        progressBar.textContent = checkedTopics + '/' + totalTopics;
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) {
+        searchInput.addEventListener('input', function() {
+            const query = this.value.toLowerCase();
+            const topics = document.querySelectorAll('.topic-item');
+            topics.forEach(topic => {
+                const title = topic.getAttribute('data-title');
+                const content = topic.getAttribute('data-content');
+                if (title.includes(query) || content.includes(query)) {
+                    topic.style.display = '';
+                } else {
+                    topic.style.display = 'none';
+                }
+            });
+        });
+    }
+});
 
 const quizzes = {
     quiz1: {

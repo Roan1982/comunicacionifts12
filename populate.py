@@ -33,22 +33,32 @@ for data in topics_data:
 
 # Quizzes
 quizzes_data = [
-    {"title": "Evaluación 1: Conceptos Básicos", "questions": [
+    {"title": "Evaluación 1: Conceptos Básicos", "topic_id": 1, "questions": [
         {"question": "¿Qué es la comunicación?", "options": ["El proceso de transmitir información", "Un tipo de tecnología", "Un medio de transporte"], "answer": 1},
         {"question": "¿Cuál es un elemento clave de la comunicación?", "options": ["Emisor", "Vehículo", "Edificio"], "answer": 1},
         {"question": "¿Qué incluye el feedback en la comunicación?", "options": ["Respuesta del receptor", "El canal usado", "El mensaje original"], "answer": 1}
     ]},
-    # Add more quizzes similarly
+    {"title": "Evaluación 2: Medios de Comunicación", "topic_id": 2, "questions": [
+        {"question": "¿Qué es un medio verbal?", "options": ["Habla", "Gesto", "Imagen"], "answer": 1},
+        {"question": "¿Cuál es un ejemplo de comunicación no verbal?", "options": ["Correo electrónico", "Expresión facial", "Libro"], "answer": 2},
+        {"question": "¿Qué medio usa texto escrito?", "options": ["Televisión", "Radio", "Correo"], "answer": 3}
+    ]},
+    {"title": "Evaluación 3: Barreras en la Comunicación", "topic_id": 5, "questions": [
+        {"question": "¿Qué es una barrera física en la comunicación?", "options": ["Ruido ambiental", "Prejuicios", "Lenguaje complejo"], "answer": 1},
+        {"question": "¿Cómo se puede superar una barrera emocional?", "options": ["Ignorarla", "Usar empatía", "Cambiar el canal"], "answer": 2}
+    ]},
+    # Add more as needed
 ]
 
 for quiz_data in quizzes_data:
-    quiz, created = Quiz.objects.get_or_create(title=quiz_data['title'])
+    topic = Topic.objects.get(id=quiz_data['topic_id'])
+    quiz, created = Quiz.objects.get_or_create(title=quiz_data['title'], defaults={'topic': topic})
     for q in quiz_data['questions']:
         Question.objects.get_or_create(quiz=quiz, question_text=q['question'], defaults={
             'option1': q['options'][0],
             'option2': q['options'][1],
             'option3': q['options'][2],
-            'correct_answer': q['answer']
+            'correct_answer': q['answer'] + 1
         })
 
 print("Data populated")

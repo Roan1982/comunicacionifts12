@@ -3,9 +3,28 @@
 {% block title %}Resultados - Aprende Comunicación{% endblock %}
 
 {% block content %}
-    <section>
-        <h2>Resultados</h2>
-        <p>Tu puntuación: {{ score }} / {{ total }}</p>
-        <a href="{% url 'topics' %}">Volver a Temas</a>
-    </section>
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow text-center">
+                <div class="card-body">
+                    <h2 class="card-title">Resultados</h2>
+                    <div class="mb-3">
+                        <h4>Tu puntuación: {{ score }} / {{ total }}</h4>
+                        <div class="progress mb-3">
+                            <div class="progress-bar {% if score == total %}bg-success{% elif score >= total|div:2 %}bg-warning{% else %}bg-danger{% endif %}" role="progressbar" style="width: {{ score|mul:100|div:total }}%;" aria-valuenow="{{ score }}" aria-valuemin="0" aria-valuemax="{{ total }}">{{ score }}/{{ total }}</div>
+                        </div>
+                        {% if score == total %}
+                            <p class="text-success">¡Excelente! Has acertado todas las preguntas.</p>
+                        {% elif score >= total|div:2 %}
+                            <p class="text-warning">Buen trabajo. Revisa los temas que no entendiste.</p>
+                        {% else %}
+                            <p class="text-danger">Necesitas estudiar más. Revisa todos los temas.</p>
+                        {% endif %}
+                    </div>
+                    <a href="{% url 'topics' %}" class="btn btn-primary">Volver a Temas</a>
+                    <a href="{% url 'quiz' quiz_id %}" class="btn btn-secondary">Repetir Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

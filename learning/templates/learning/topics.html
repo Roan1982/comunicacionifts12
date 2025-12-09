@@ -3,18 +3,38 @@
 {% block title %}Teoría - Aprende Comunicación{% endblock %}
 
 {% block content %}
-    <section>
-        <h2>Teoría de Comunicación</h2>
-        <p>Progreso: <span id="progress-count">{{ progress|length }}</span>/<span id="total-topics">{{ topics|length }}</span></p>
-        <div id="topics">
-            {% for topic in topics %}
-                <div class="topic">
-                    <input type="checkbox" {% if progress|get:topic.id %}checked{% endif %} onchange="toggleProgress({{ topic.id }})">
-                    <h3>{{ topic.title }}</h3>
-                    <p>{{ topic.content }}</p>
-                </div>
-            {% endfor %}
+    <h2 class="mb-4">Teoría de Comunicación</h2>
+    <div class="mb-4">
+        <input type="text" id="searchInput" class="form-control" placeholder="Buscar temas...">
+    </div>
+    <div class="mb-4">
+        <h5>Progreso</h5>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: {{ progress_percentage }}%;" aria-valuenow="{{ completed_topics|length }}" aria-valuemin="0" aria-valuemax="{{ topics|length }}">{{ completed_topics|length }}/{{ topics|length }}</div>
         </div>
-        <a href="{% url 'quiz' 1 %}">Ir a Evaluaciones</a>
-    </section>
+    </div>
+    <div class="accordion" id="topicsAccordion">
+        {% for topic in topics %}
+            <div class="accordion-item topic-item" data-title="{{ topic.title|lower }}" data-content="{{ topic.content|lower }}">
+                <h2 class="accordion-header" id="heading{{ topic.id }}">
+                    <button class="accordion-button {% if not forloop.first %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ topic.id }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="collapse{{ topic.id }}">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" {% if topic.id in completed_topics %}checked{% endif %} onchange="toggleProgress({{ topic.id }})" id="check{{ topic.id }}">
+                            <label class="form-check-label ms-2" for="check{{ topic.id }}">
+                                {{ topic.title }}
+                            </label>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapse{{ topic.id }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" aria-labelledby="heading{{ topic.id }}" data-bs-parent="#topicsAccordion">
+                    <div class="accordion-body">
+                        <p>{{ topic.content }}</p>
+                        {% if topic.quiz_set.exists %}
+                            <a href="{% url 'quiz' topic.quiz_set.first.id %}" class="btn btn-outline-primary">Tomar Quiz</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
