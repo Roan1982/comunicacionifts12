@@ -1,0 +1,49 @@
+{% extends 'learning/base.html' %}
+
+{% block title %}Temas - Aprende Comunicación{% endblock %}
+
+{% block content %}
+<h1>Temas de Comunicación</h1>
+<p>Progreso: {{ completed_count }}/{{ total_topics }} temas completados ({{ progress_percentage|floatformat:0 }}%)</p>
+<div class="progress mb-4">
+    <div class="progress-bar" role="progressbar" style="width: {{ progress_percentage }}%"></div>
+</div>
+
+<div class="row">
+    {% for topic in topics %}
+    <div class="col-md-6 mb-4">
+        <div class="card {% if topic.id in completed_topics %}border-success bg-light{% endif %}">
+            <div class="card-body">
+                <h5 class="card-title">
+                    {% if topic.id in completed_topics %}
+                        <i class="bi bi-check-circle-fill text-success"></i>
+                    {% endif %}
+                    {{ topic.title }}
+                </h5>
+                <p class="card-text">{{ topic.content|truncatechars:200 }}</p>
+                <button class="btn btn-outline-primary" onclick="toggleContent({{ topic.id }})">Leer Más</button>
+                {% if topic.quiz_set.exists %}
+                    <a href="{% url 'quiz' topic.quiz_set.first.id %}" class="btn btn-success">Tomar Quiz</a>
+                {% endif %}
+            </div>
+        </div>
+        <div id="content-{{ topic.id }}" class="mt-2" style="display: none;">
+            <div class="card">
+                <div class="card-body">
+                    <p>{{ topic.content }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+function toggleContent(topicId) {
+    const content = document.getElementById('content-' + topicId);
+    content.style.display = content.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+{% endblock %}

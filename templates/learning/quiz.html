@@ -1,0 +1,36 @@
+{% extends 'learning/base.html' %}
+
+{% block title %}Quiz - {{ quiz.title }}{% endblock %}
+
+{% block content %}
+<h1>{{ quiz.title }}</h1>
+<form method="post" action="{% url 'submit_quiz' quiz.id %}">
+    {% csrf_token %}
+    {% for question in questions %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">{{ question.question_text }}</h5>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question_{{ question.id }}" value="1" id="q{{ question.id }}_1">
+                <label class="form-check-label" for="q{{ question.id }}_1">
+                    {{ question.option1 }}
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question_{{ question.id }}" value="2" id="q{{ question.id }}_2">
+                <label class="form-check-label" for="q{{ question.id }}_2">
+                    {{ question.option2 }}
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="question_{{ question.id }}" value="3" id="q{{ question.id }}_3">
+                <label class="form-check-label" for="q{{ question.id }}_3">
+                    {{ question.option3 }}
+                </label>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <button type="submit" class="btn btn-primary">Enviar Respuestas</button>
+</form>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'learning/base.html' %}
+
+{% block title %}Resultados - Aprende Comunicación{% endblock %}
+
+{% block content %}
+<h1>Resultados del Quiz</h1>
+<p>Tu puntuación: {{ score }}/{{ total }} ({{ percentage|floatformat:0 }}%)</p>
+<div class="progress mb-4">
+    <div class="progress-bar" role="progressbar" style="width: {{ percentage }}%"></div>
+</div>
+
+{% for result in results %}
+<div class="card mb-3 {% if result.is_correct %}border-success{% else %}border-danger{% endif %}">
+    <div class="card-body">
+        <h5 class="card-title {% if result.is_correct %}text-success{% else %}text-danger{% endif %}">
+            {% if result.is_correct %}
+                <i class="bi bi-check-circle-fill"></i> Correcto
+            {% else %}
+                <i class="bi bi-x-circle-fill"></i> Incorrecto
+            {% endif %}
+        </h5>
+        <p><strong>Pregunta:</strong> {{ result.question }}</p>
+        <p><strong>Tu respuesta:</strong> {{ result.user_answer_text }}</p>
+        <p><strong>Respuesta correcta:</strong> {{ result.correct_answer_text }}</p>
+    </div>
+</div>
+{% endfor %}
+
+<a href="{% url 'topics' %}" class="btn btn-primary">Volver a Temas</a>
+{% endblock %}

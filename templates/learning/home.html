@@ -1,0 +1,51 @@
+{% extends 'learning/base.html' %}
+
+{% block title %}Inicio - Aprende Comunicación{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8">
+        <h1>Bienvenido a Aprende Comunicación</h1>
+        <p>Esta plataforma te ayudará a aprender sobre teoría de la comunicación de manera interactiva.</p>
+        <p>Contenido basado en las teorías de Theodor Adorno y otros autores clave.</p>
+    </div>
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Progreso</h5>
+                {% if user.is_authenticated %}
+                    <p>Has completado {{ user.userprogress_set.filter(completed=True).count }} de {{ topics|length }} temas.</p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: {{ progress_percentage }}%">{{ progress_percentage|floatformat:0 }}%</div>
+                    </div>
+                {% else %}
+                    <p>Inicia sesión para ver tu progreso.</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-12">
+        <h2>Temas Disponibles</h2>
+        <div class="row">
+            {% for topic in topics %}
+            <div class="col-md-4 mb-3">
+                <div class="card {% if topic.id in completed_topics %}border-success{% endif %}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ topic.title }}</h5>
+                        <p class="card-text">{{ topic.content|truncatechars:100 }}</p>
+                        {% if user.is_authenticated %}
+                            <a href="{% url 'topics' %}" class="btn btn-primary">Ver Tema</a>
+                        {% else %}
+                            <a href="{% url 'login' %}" class="btn btn-primary">Iniciar Sesión</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

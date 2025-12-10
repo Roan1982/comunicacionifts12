@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import django
 
@@ -5,6 +6,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'comunicacion_project.settings')
 django.setup()
 
 from learning.models import Topic, Quiz, Question
+from django.contrib.auth.models import User
 
 # Topics
 topics_data = [
@@ -218,7 +220,7 @@ quizzes_data = [
 ]
 
 for quiz_data in quizzes_data:
-    topic = Topic.objects.get(id=quiz_data['topic_id'])
+    topic = Topic.objects.get(order=quiz_data['topic_id'])
     quiz, created = Quiz.objects.get_or_create(title=quiz_data['title'], defaults={'topic': topic})
     for q in quiz_data['questions']:
         question, created = Question.objects.get_or_create(quiz=quiz, question_text=q['question'], defaults={'option1': '', 'option2': '', 'option3': '', 'correct_answer': 1})
@@ -227,5 +229,11 @@ for quiz_data in quizzes_data:
         question.option3 = q['options'][2]
         question.correct_answer = q['answer'] + 1
         question.save()
+
+# Create test user
+user, created = User.objects.get_or_create(username='estuser', defaults={'email': 'estuser@example.com'})
+if created:
+    user.set_password('password123')
+    user.save()
 
 print("Data populated")

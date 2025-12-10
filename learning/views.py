@@ -50,9 +50,8 @@ def submit_quiz(request, quiz_id):
                 score += 1
             results.append({
                 'question': question.question_text,
-                'options': [question.option1, question.option2, question.option3],
-                'user_answer': int(user_answer) if user_answer else None,
-                'correct_answer': question.correct_answer,
+                'user_answer_text': question.option1 if user_answer == '1' else question.option2 if user_answer == '2' else question.option3 if user_answer == '3' else 'No respondida',
+                'correct_answer_text': question.option1 if question.correct_answer == 1 else question.option2 if question.correct_answer == 2 else question.option3,
                 'is_correct': correct
             })
         percentage = (score / total * 100) if total > 0 else 0
