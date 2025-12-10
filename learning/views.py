@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.http import JsonResponse
+from django.contrib.auth import logout
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import login
 from .models import Topic, Quiz, Question, UserProgress
@@ -16,6 +17,10 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'learning/register.html', {'form': form})
+
+def logout_view(request):
+    logout(request)
+    return redirect('home')
 
 def home(request):
     return render(request, 'learning/home.html')
