@@ -26,6 +26,13 @@ topics_data = [
     {"title": "Teoría Hipodérmica o de la Bala Mágica (1920s-1930s)", "content": "Los medios inyectan mensajes directamente en la mente del receptor como una bala, causando efectos inmediatos y uniformes. Aunque desmentida, explica el pánico inicial ante los medios masivos y destaca la influencia potencial de la propaganda.", "order": 16},
     {"title": "Teoría de la Dependencia de los Medios (Ball-Rokeach, DeFleur, 1976)", "content": "La dependencia de los individuos hacia los medios para satisfacer necesidades crea poder social. Cuando hay incertidumbre (como en crisis), la dependencia aumenta, y los medios pueden influir más en actitudes y comportamientos.", "order": 17},
     {"title": "Evolución de los Medios de Comunicación", "content": "La comunicación ha evolucionado desde formas primitivas hasta digitales. Incluye: el servicio postal (siglo XVII), los trenes que facilitaron el transporte de información, el telégrafo (1837) para mensajes eléctricos, la fotografía (1826) para imágenes fijas, el cine (1895) para narrativas visuales, la radio (1920) para audio masivo, el teléfono (1876) para comunicación interpersonal, la televisión (1920s) para video en vivo, e internet (1960s-1990s) para comunicación global digital. Cada medio transformó la sociedad y la forma de compartir información.", "order": 18},
+    {"title": "Teorías de la Comunicación", "content": "Resumen de las principales teorías de la comunicación: Modelo de Shannon y Weaver (1949) con elementos como fuente, codificador, mensaje, canal, ruido, decodificador y receptor. Modelo de Lasswell (1948): ¿Quién dice qué, en qué canal, a quién, con qué efecto? Teoría de la Agenda Setting (McCombs y Shaw, 1972): Los medios establecen la agenda de temas importantes. Teoría de los Usos y Gratificaciones (Katz, Blumler, 1974): Los receptores usan medios para satisfacer necesidades. Teoría de la Espiral del Silencio (Noelle-Neumann, 1974): Las opiniones minoritarias se silencian. Teoría Hipodérmica (1920s-1930s): Mensajes inyectados directamente. Teoría de la Dependencia de los Medios (Ball-Rokeach, DeFleur, 1976): Dependencia crea poder social.", "order": 19},
+    {"title": "Historia de la Comunicación", "content": "La historia de la comunicación humana abarca desde las formas más primitivas hasta la era digital actual, marcando hitos que transformaron la sociedad y la cultura. Las primeras formas de comunicación fueron orales, con el lenguaje hablado que permitió la transmisión de conocimientos, tradiciones y experiencias entre generaciones. La escritura, inventada alrededor del 3200 a.C. en Mesopotamia, revolucionó la comunicación al permitir el registro permanente de información. Las cartas y el correo postal surgieron en la antigüedad, con los romanos desarrollando un sistema postal organizado. En el siglo XV, la imprenta de Gutenberg (1450) democratizó el conocimiento, permitiendo la producción masiva de libros y documentos. Los diarios modernos aparecieron en el siglo XVII, con el primer periódico regular publicado en Alemania en 1605. El telégrafo eléctrico, inventado por Samuel Morse en 1837, permitió la transmisión instantánea de mensajes a largas distancias, revolucionando el comercio y las noticias. El teléfono, patentado por Alexander Graham Bell en 1876, hizo posible la comunicación interpersonal en tiempo real. La radio, desarrollada en la década de 1890, ofreció comunicación masiva de audio, seguida por la televisión en los años 1920-1930. Internet, nacido en la década de 1960 como ARPANET militar, se convirtió en la red global que conocemos hoy. Cada innovación no solo mejoró la velocidad y alcance de la comunicación, sino que también transformó las relaciones sociales, la economía y la política. La comunicación ha evolucionado de ser un privilegio de pocos a un derecho universal, aunque con desafíos como la desinformación y la brecha digital.", "order": 20},
+    {"title": "La Industria Cultural", "content": "El concepto de la 'industria cultural' según Theodor Adorno representa un marco crítico para entender cómo operan los medios masivos en sociedades capitalistas. Adorno argumenta que la industria cultural no es simplemente una colección de productos artísticos o de entretenimiento, sino un mecanismo sistemático diseñado para mercantilizar la cultura y manipular la conciencia pública. A diferencia de las formas artísticas tradicionales que podrían fomentar la reflexión individual o el pensamiento crítico, la industria cultural estandariza la producción cultural, convirtiéndola en una empresa rentable que prioriza las demandas del mercado sobre la expresión creativa genuina. Esta industria abarca diversos medios, incluyendo televisión, radio y cine, que son controlados por entidades corporativas que buscan maximizar el alcance de la audiencia y el consumo. Adorno enfatiza que la función principal de la industria cultural es integrar a los individuos en el orden social existente, reforzando ideologías dominantes mientras suprime el disenso. Al producir contenido que apela al mínimo común denominador, cultiva la pasividad y la conformidad entre las audiencias, quienes son condicionados para aceptar el entretenimiento prefabricado como cultura auténtica. Además, la industria cultural difumina las líneas entre la cultura alta y baja, democratizando el acceso al arte pero a costa de diluir su potencial transformador. Adorno critica cómo este sistema explota los deseos humanos de distracción y escapismo, canalizándolos hacia patrones de consumo que sostienen jerarquías económicas. El resultado es una sociedad donde los productos culturales no son herramientas para la emancipación, sino instrumentos de control, perpetuando la alienación y previniendo el cambio social genuino. En este contexto, la industria cultural se ve como una extensión del capitalismo industrial, donde la creatividad humana es subordinada a motivos de lucro, llevando a una homogeneización de las experiencias culturales en todo el mundo. El análisis de Adorno destaca la necesidad de examinar los medios no solo por su contenido, sino por su rol estructural en la reproducción de dinámicas de poder. En última instancia, la industria cultural socava la posibilidad de comunicación auténtica, reemplazando el diálogo significativo con espectáculos superficiales que entretienen sin iluminar. Esta perspectiva desafía a los espectadores a cuestionar las fuentes e intenciones detrás del consumo mediático, instando a un compromiso crítico con los productos culturales en lugar de la aceptación pasiva. Al reconocer las tendencias manipuladoras de la industria cultural, los individuos pueden comenzar a resistir su influencia y buscar formas alternativas de expresión cultural que promuevan la conciencia crítica y el progreso social. Las ideas de Adorno siguen siendo relevantes en la era digital actual, donde las plataformas de streaming y las redes sociales continúan mercantilizando la cultura en una escala sin precedentes.", "order": 21},
+    {"title": "Mensajes Latentes en los Medios", "content": "La discusión de Adorno sobre los mensajes latentes en los medios masivos revela una capa sofisticada de comunicación que opera por debajo de la superficie del contenido explícito. A diferencia de los mensajes manifiestos, que son las narrativas evidentes o la información presentada directamente a las audiencias, los mensajes latentes son significados implícitos y ocultos incrustados en los textos mediáticos que influyen en los espectadores de manera subconsciente. Estos mensajes son elaborados estratégicamente por la industria cultural para eludir el escrutinio racional y penetrar en la psique, a menudo reforzando normas sociales, valores consumistas o sesgos ideológicos sin que la audiencia sea consciente de ello. Adorno ilustra esto a través de ejemplos en la programación televisiva, donde el entretenimiento aparentemente inocuo lleva prescripciones subyacentes para el comportamiento, patrones de pensamiento o actitudes sociales. El mensaje latente podría contradecir al manifiesto, creando una disonancia que manipula percepciones y emociones. Por ejemplo, un programa que parece celebrar la libertad podría promover sutilmente la conformidad o la obediencia a través de su estructura narrativa, pistas visuales o caracterizaciones. Esta comunicación multi-capa no es accidental, sino una táctica deliberada empleada por los productores de medios para lograr un impacto psicológico más amplio. Adorno advierte que los mensajes latentes son particularmente efectivos porque evaden la resistencia consciente, filtrándose en el subconsciente y moldeando creencias y comportamientos a largo plazo. Contribuyen a la formación de un público crédulo, susceptible a la manipulación por parte de instituciones poderosas. Además, estos mensajes a menudo se alinean con intereses económicos, alentando el consumo o la pasividad política que beneficia al statu quo. Analizar los mensajes latentes requiere un enfoque crítico, examinando no solo lo que se dice, sino cómo se dice, incluyendo simbolismo, ritmo y enmarcado contextual. Las ideas de Adorno destacan la importancia de la alfabetización mediática para decodificar estas capas ocultas, empoderando a las audiencias para resistir la indoctrinación. En los paisajes mediáticos contemporáneos, los mensajes latentes persisten en la publicidad, las noticias y el entretenimiento, influyendo en todo, desde opiniones políticas hasta identidades personales. Comprender este concepto es crucial para fomentar la ciudadanía informada y desafiar el poder manipulador de la comunicación masiva. El marco de Adorno subraya que la verdadera comprensión de los efectos mediáticos requiere mirar más allá de lo obvio para descubrir las fuerzas sutiles en juego.", "order": 22},
+    {"title": "Técnicas de Manipulación Mediática", "content": "El análisis de Adorno sobre las técnicas de manipulación mediática expone los métodos estratégicos utilizados por la industria cultural para controlar y moldear la opinión pública. La manipulación en este contexto no es propaganda cruda, sino un proceso matizado que involucra tácticas psicológicas, estructurales y económicas que influyen en las audiencias en múltiples niveles. Una técnica clave es el uso de mensajes multiestratificados, donde el contenido está diseñado para apelar simultáneamente a diferentes capas psicológicas, asegurando un impacto amplio y profundo. Por ejemplo, un programa de televisión podría entretener en la superficie mientras incrustaba pistas ideológicas que alinean a los espectadores con estructuras de poder dominantes. Adorno describe cómo los productores de medios organizan el contenido para seducir a las audiencias, creando una ilusión de elección mientras dirigen las respuestas hacia resultados predeterminados. Esto incluye la selección cuidadosa de narrativas que evocan emociones, estereotipos o deseos, canalizando las reacciones públicas de maneras que benefician intereses corporativos o políticos. Otra técnica involucra la producción de mediocridad e inercia intelectual, donde el contenido desalienta el compromiso crítico al promover temas simplistas y repetitivos que fomentan la credulidad. Adorno argumenta que esta manipulación es facilitada por los imperativos económicos de la industria, que priorizan la rentabilidad sobre la calidad, llevando a un ciclo de demanda por material fácilmente digerible y no desafiante. Además, la manipulación se extiende al enmarcado de la realidad, donde los medios presentan una versión sanitizada de los eventos que oculta contradicciones sociales y refuerza jerarquías existentes. Técnicas como la repetición, el sensacionalismo y los apelativos emocionales se emplean para crear un sentido de urgencia o inevitabilidad, haciendo que la resistencia parezca fútil. Adorno enfatiza que esta forma de manipulación es particularmente insidiosa en sociedades democráticas, donde se disfraza de entretenimiento o información. Para contrarrestarla, las audiencias deben desarrollar conciencia de estas técnicas, cuestionando las fuentes e intenciones detrás del contenido mediático. La crítica de Adorno sirve como una advertencia contra la erosión de la autonomía en una era de influencia mediática omnipresente, instando a la participación activa en la producción y consumo cultural.", "order": 23},
+    {"title": "Televisión y Exteriorización", "content": "El concepto de Adorno sobre la televisión y la exteriorización critica cómo el medio desplaza la experiencia humana de la reflexión interna hacia el espectáculo externo. Contrasta el acto de leer una novela, que involucra un monólogo interno e interpretación personal, con la visualización televisiva, que enfatiza señales visuales que demandan compromiso inmediato y superficial. Esta exteriorización se refiere al proceso por el cual los medios transforman experiencias subjetivas e introspectivas en fenómenos objetivos y observables, priorizando la claridad visual sobre la profundidad. Adorno argumenta que el lenguaje televisivo, caracterizado por señales ópticas e imágenes inequívocas, externaliza los procesos de pensamiento, haciéndolos tangibles pero desprovistos de matices. Este cambio se alinea con los objetivos de la industria cultural, ya que facilita el consumo masivo al reducir ideas complejas a visuales digeribles. La exteriorización también contribuye a la alienación de los individuos, quienes se convierten en espectadores en lugar de participantes en sus propias narrativas. Adorno observa que este proceso socava la interioridad, la capacidad para la contemplación privada, reemplazándola con una exhibición pública de emociones e ideas. En la televisión, las experiencias personales se mercantilizan y transmiten, perdiendo su calidad íntima y convirtiéndose en herramientas para la manipulación. Además, la exteriorización refuerza la conformidad social al presentar imágenes estandarizadas de la realidad, desalentando puntos de vista divergentes. Adorno vincula esto a cambios sociales más amplios, donde la tecnología media las relaciones humanas, priorizando la eficiencia y la visibilidad sobre la autenticidad. Las implicaciones para la comunicación son profundas, ya que la televisión fomenta una cultura de inmediatez y distracción, obstaculizando la comprensión profunda. El análisis de Adorno advierte sobre la pérdida de distancia crítica, donde los espectadores aceptan realidades mediadas como verdad. Para resistir esto, aboga por medios que fomenten el diálogo interno y la reflexión. En el contexto actual, con pantallas dominando la vida diaria, las ideas de Adorno destacan la necesidad de equilibrar los estímulos externos con el procesamiento interno, preservando la capacidad humana para el pensamiento significativo.", "order": 24},
+    {"title": "Inercia Intelectual y Credulidad", "content": "El examen de Adorno sobre la inercia intelectual y la credulidad en las audiencias mediáticas revela cómo la comunicación masiva cultiva la aceptación pasiva y la credulidad. La inercia intelectual se refiere a la estagnación del pensamiento crítico, donde los individuos se vuelven intelectualmente perezosos, prefiriendo el entretenimiento sobre el análisis. La credulidad, o disposición excesiva a creer, se fomenta a través de contenido que simplifica cuestiones complejas, promoviendo estereotipos y narrativas no cuestionadas. Adorno argumenta que la industria cultural produce mediocridad para mantener este estado, ya que el material desafiante podría perturbar los patrones de consumo. La televisión y otros medios bombardean a las audiencias con contenido repetitivo y sensacionalista que desalienta el cuestionamiento, llevando a una población que reproduce tendencias totalitarias bajo la apariencia de democracia. Esta inercia no es natural, sino ingenierada, alineándose con intereses económicos que prosperan en comportamientos predecibles. Adorno vincula la credulidad a los mensajes latentes en los medios, que implantan creencias sin evidencia, haciendo a las audiencias susceptibles a la manipulación. El resultado es una sociedad donde las opiniones se forman por los medios en lugar de la razón, erosionando el discurso democrático. Además, la inercia intelectual perpetúa desigualdades sociales, ya que los grupos marginados a menudo se representan de maneras que justifican su exclusión. Adorno advierte que este ciclo es difícil de romper, ya que los medios se refuerzan a sí mismos a través de bucles de retroalimentación de popularidad y ganancia. Para combatirlo, la educación y la alfabetización mediática crítica son esenciales, alentando el compromiso activo en lugar de la visualización pasiva. Las ideas de Adorno son pertinentes en una era de noticias falsas y cámaras de eco, donde la credulidad socava la toma de decisiones informada. En última instancia, superar la inercia intelectual requiere fomentar entornos que valoren la indagación y el escepticismo, contrarrestando el atractivo seductor de las narrativas mediáticas simplistas.", "order": 25},
 ]
 
 for data in topics_data:
@@ -34,31 +41,191 @@ for data in topics_data:
 # Quizzes
 quizzes_data = [
     {"title": "Evaluación 1: Conceptos Básicos", "topic_id": 1, "questions": [
-        {"question": "¿Qué es la comunicación?", "options": ["El proceso de transmitir información", "Un tipo de tecnología", "Un medio de transporte"], "answer": 1},
-        {"question": "¿Cuál es un elemento clave de la comunicación?", "options": ["Emisor", "Vehículo", "Edificio"], "answer": 1},
-        {"question": "¿Qué incluye el feedback en la comunicación?", "options": ["Respuesta del receptor", "El canal usado", "El mensaje original"], "answer": 1}
+        {"question": "¿Qué es la comunicación?", "options": ["El proceso de transmitir información", "Un tipo de tecnología", "Un medio de transporte"], "answer": 0},
+        {"question": "¿Cuál es un elemento clave de la comunicación?", "options": ["Emisor", "Vehículo", "Edificio"], "answer": 0},
+        {"question": "¿Qué incluye el feedback en la comunicación?", "options": ["Respuesta del receptor", "El canal usado", "El mensaje original"], "answer": 0},
+        {"question": "¿Qué tipo de comunicación usa palabras?", "options": ["Verbal", "No verbal", "Escrita"], "answer": 0},
+        {"question": "¿Qué es el contexto en la comunicación?", "options": ["La situación", "El emisor", "El receptor"], "answer": 0}
     ]},
     {"title": "Evaluación 2: Medios de Comunicación", "topic_id": 2, "questions": [
-        {"question": "¿Qué es un medio verbal?", "options": ["Habla", "Gesto", "Imagen"], "answer": 1},
-        {"question": "¿Cuál es un ejemplo de comunicación no verbal?", "options": ["Correo electrónico", "Expresión facial", "Libro"], "answer": 2},
-        {"question": "¿Qué medio usa texto escrito?", "options": ["Televisión", "Radio", "Correo"], "answer": 3}
+        {"question": "¿Qué es un medio verbal?", "options": ["Habla", "Gesto", "Imagen"], "answer": 0},
+        {"question": "¿Cuál es un ejemplo de comunicación no verbal?", "options": ["Correo electrónico", "Expresión facial", "Libro"], "answer": 1},
+        {"question": "¿Qué medio usa texto escrito?", "options": ["Televisión", "Radio", "Correo"], "answer": 2},
+        {"question": "¿Qué medio llega a audiencias amplias?", "options": ["Conversación", "Medios masivos", "Carta personal"], "answer": 1},
+        {"question": "¿Qué medio es interactivo?", "options": ["Radio unidireccional", "Internet", "Periódico"], "answer": 1}
     ]},
     {"title": "Evaluación 3: Barreras en la Comunicación", "topic_id": 5, "questions": [
-        {"question": "¿Qué es una barrera física en la comunicación?", "options": ["Ruido ambiental", "Prejuicios", "Lenguaje complejo"], "answer": 1},
-        {"question": "¿Cómo se puede superar una barrera emocional?", "options": ["Ignorarla", "Usar empatía", "Cambiar el canal"], "answer": 2}
+        {"question": "¿Qué es una barrera física en la comunicación?", "options": ["Ruido ambiental", "Prejuicios", "Lenguaje complejo"], "answer": 0},
+        {"question": "¿Cómo se puede superar una barrera emocional?", "options": ["Ignorarla", "Usar empatía", "Cambiar el canal"], "answer": 1},
+        {"question": "¿Qué tipo de barrera son los prejuicios?", "options": ["Física", "Psicológica", "Tecnológica"], "answer": 1},
+        {"question": "¿Qué barrera involucra diferencias culturales?", "options": ["Semántica", "Cultural", "Organizacional"], "answer": 1},
+        {"question": "¿Cómo mejorar la comunicación efectiva?", "options": ["Ignorar feedback", "Usar claridad y adaptación", "Aumentar ruido"], "answer": 1}
     ]},
-    # Add more as needed
+    {"title": "Evaluación 4: Industria Cultural", "topic_id": 6, "questions": [
+        {"question": "Según Adorno, ¿qué produce la industria cultural?", "options": ["Mensajes simples", "Mensajes multiestratificados", "Solo entretenimiento"], "answer": 1},
+        {"question": "¿Qué es más importante en los mensajes de los media?", "options": ["El mensaje evidente", "El mensaje oculto", "El canal"], "answer": 1},
+        {"question": "¿Cómo manipulan los media al público?", "options": ["Solo con mensajes manifiestos", "A niveles latentes", "Sin objetivos"], "answer": 1},
+        {"question": "¿Qué incluye la industria cultural?", "options": ["Solo música", "Significados superpuestos", "Mensajes únicos"], "answer": 1},
+        {"question": "¿Qué colabora en el resultado de los mensajes?", "options": ["Solo el emisor", "Niveles manifiestos y latentes", "El receptor"], "answer": 1}
+    ]},
+    {"title": "Evaluación 5: Efectos de los Media", "topic_id": 7, "questions": [
+        {"question": "¿Qué buscan los medios según Adorno?", "options": ["Educar", "Seducir psicológicamente", "Informar solo"], "answer": 1},
+        {"question": "¿Qué producen los espectáculos televisivos?", "options": ["Creatividad", "Mediocridad e inercia", "Resistencia"], "answer": 1},
+        {"question": "¿Cómo penetran los mensajes latentes?", "options": ["Con resistencia", "Sin controles de conciencia", "Solo conscientemente"], "answer": 1},
+        {"question": "¿Qué tipo de análisis se considera limitado?", "options": ["El que incluye todos los niveles", "El que ignora mensajes latentes", "El técnico"], "answer": 1},
+        {"question": "¿Dónde penetran los mensajes latentes?", "options": ["En el canal", "En el cerebro", "En el emisor"], "answer": 1}
+    ]},
+    {"title": "Evaluación 6: Teorías Clásicas de Comunicación", "topic_id": 11, "questions": [
+        {"question": "¿Qué incluye el modelo de Shannon y Weaver?", "options": ["Solo emisor y receptor", "Emisor, canal, ruido", "Solo mensaje"], "answer": 1},
+        {"question": "¿Qué pregunta el modelo de Lasswell?", "options": ["Cómo se siente", "Quién dice qué, a quién", "Por qué se comunica"], "answer": 1},
+        {"question": "¿Qué establece la teoría de la agenda setting?", "options": ["Qué pensar", "Qué pensar sobre", "Cómo pensar"], "answer": 1},
+        {"question": "¿Qué critica el modelo de Shannon y Weaver?", "options": ["Ser demasiado complejo", "Ser demasiado simplista", "Ignorar el feedback"], "answer": 1},
+        {"question": "¿Qué teoría explica cómo los medios influyen en la percepción pública?", "options": ["Usos y Gratificaciones", "Agenda Setting", "Espiral del Silencio"], "answer": 1}
+    ]},
+    {"title": "Evaluación 7: Teorías de Recepción", "topic_id": 14, "questions": [
+        {"question": "¿Qué satisface la teoría de usos y gratificaciones?", "options": ["Necesidades del emisor", "Necesidades del receptor", "Necesidades del canal"], "answer": 1},
+        {"question": "¿Qué evita la espiral del silencio?", "options": ["Opiniones mayoritarias", "Expresar opiniones minoritarias", "Comunicación directa"], "answer": 1},
+        {"question": "¿Qué perspectiva ofrece la teoría de usos y gratificaciones?", "options": ["Pasiva del receptor", "Activa del receptor", "Técnica"], "answer": 1},
+        {"question": "¿Qué crea miedo en la espiral del silencio?", "options": ["Aislamiento social", "Comunicación excesiva", "Opiniones mayoritarias"], "answer": 0},
+        {"question": "¿Qué refuerza la espiral del silencio?", "options": ["Opiniones minoritarias", "Opiniones mayoritarias", "Comunicación interpersonal"], "answer": 1}
+    ]},
+    {"title": "Evaluación 8: Evolución de los Medios", "topic_id": 18, "questions": [
+        {"question": "¿Cuál fue el primer medio de comunicación masiva?", "options": ["Telégrafo", "Prensa", "Radio"], "answer": 1},
+        {"question": "¿Qué medio permitió la comunicación interpersonal a distancia?", "options": ["Fotografía", "Teléfono", "Cine"], "answer": 1},
+        {"question": "¿Qué medio revolucionó la comunicación global?", "options": ["Televisión", "Internet", "Radio"], "answer": 1},
+        {"question": "¿Qué medio permitió imágenes fijas?", "options": ["Telégrafo", "Fotografía", "Radio"], "answer": 1},
+        {"question": "¿Qué medio introdujo narrativas visuales?", "options": ["Fotografía", "Cine", "Teléfono"], "answer": 1}
+    ]},
+    {"title": "Evaluación 9: Teorías de la Comunicación", "topic_id": 19, "questions": [
+        {"question": "¿Cuál teoría explica la inyección de mensajes como una bala?", "options": ["Hipodérmica", "Agenda Setting", "Espiral del Silencio"], "answer": 0},
+        {"question": "¿Qué teoría se basa en la dependencia de los medios?", "options": ["Usos y Gratificaciones", "Dependencia de los Medios", "Lasswell"], "answer": 1},
+        {"question": "¿Qué modelo pregunta quién dice qué a quién?", "options": ["Shannon y Weaver", "Lasswell", "McCombs y Shaw"], "answer": 1},
+        {"question": "¿Qué teoría se centra en el receptor activo?", "options": ["Hipodérmica", "Usos y Gratificaciones", "Agenda Setting"], "answer": 1},
+        {"question": "¿Qué teoría explica el silencio de opiniones minoritarias?", "options": ["Dependencia de los Medios", "Espiral del Silencio", "Lasswell"], "answer": 1}
+    ]},
+    {"title": "Evaluación 10: Comunicación Interpersonal", "topic_id": 3, "questions": [
+        {"question": "¿Qué caracteriza la comunicación interpersonal?", "options": ["Unidireccional", "Bidireccional y directa", "Masiva"], "answer": 1},
+        {"question": "¿Qué habilidad es clave en la comunicación interpersonal?", "options": ["Escucha activa", "Propaganda", "Codificación"], "answer": 0},
+        {"question": "¿Qué influye en la efectividad de la comunicación interpersonal?", "options": ["Solo palabras", "Lenguaje corporal", "Tecnología"], "answer": 1},
+        {"question": "¿Qué es esencial para construir relaciones?", "options": ["Comunicación masiva", "Comunicación interpersonal", "Medios escritos"], "answer": 1},
+        {"question": "¿Cómo se maneja conflictos en comunicación interpersonal?", "options": ["Ignorándolos", "Con claridad y empatía", "Usando ruido"], "answer": 1}
+    ]},
+    {"title": "Evaluación 11: Comunicación Masiva", "topic_id": 4, "questions": [
+        {"question": "¿Qué dirección tiene la comunicación masiva?", "options": ["Bidireccional", "Unidireccional", "Interpersonal"], "answer": 1},
+        {"question": "¿Qué ejemplo es de comunicación masiva?", "options": ["Conversación", "Televisión", "Correo electrónico personal"], "answer": 1},
+        {"question": "¿Qué característica tiene la comunicación masiva?", "options": ["Personal", "Impersonal", "Directa"], "answer": 1},
+        {"question": "¿Qué influye la comunicación masiva?", "options": ["Solo individuos", "Opinión pública", "Relaciones personales"], "answer": 1},
+        {"question": "¿Qué desafío enfrenta la comunicación masiva?", "options": ["Falta de alcance", "Desinformación", "Interactividad"], "answer": 1}
+    ]},
+    {"title": "Evaluación 12: Manipulación y Dominación", "topic_id": 8, "questions": [
+        {"question": "¿Qué produce la industria cultural según Adorno?", "options": ["Creatividad", "Dominación", "Educación"], "answer": 1},
+        {"question": "¿Cómo se produce la manipulación en TV?", "options": ["Mensajes evidentes", "Mensajes latentes", "Sin manipulación"], "answer": 1},
+        {"question": "¿Qué armonizan los mensajes televisivos?", "options": ["Valores democráticos", "Credos totalitarios", "Creatividad"], "answer": 1},
+        {"question": "¿Qué aparentan ser los mensajes?", "options": ["Serios", "Frívolos", "Educativos"], "answer": 1},
+        {"question": "¿Qué ratifican los mensajes?", "options": ["Libertad", "Estado de sujeción", "Resistencia"], "answer": 1}
+    ]},
+    {"title": "Evaluación 13: Estructura Multiestratificada", "topic_id": 9, "questions": [
+        {"question": "¿Qué tienen los mensajes según Adorno?", "options": ["Un nivel", "Niveles manifiestos y latentes", "Solo latentes"], "answer": 1},
+        {"question": "¿Dónde escapan los mensajes latentes?", "options": ["Conciencia", "Controles de conciencia", "Canales"], "answer": 1},
+        {"question": "¿Cómo son las relaciones entre niveles?", "options": ["Casuales", "Estratégicas", "Aleatorias"], "answer": 1},
+        {"question": "¿Qué canalizan los mensajes latentes?", "options": ["Información", "Reacción del público", "Mensajes manifiestos"], "answer": 1},
+        {"question": "¿Qué no son las relaciones entre niveles?", "options": ["Estratégicas", "Casuales", "Importantes"], "answer": 1}
+    ]},
+    {"title": "Evaluación 14: Exteriorización vs. Interioridad", "topic_id": 10, "questions": [
+        {"question": "¿Qué orienta la visualización de mass media?", "options": ["Interioridad", "Exteriorización", "Ambas"], "answer": 1},
+        {"question": "¿Qué se acerca a un monólogo interior?", "options": ["Leer una novela", "Ver TV", "Escuchar radio"], "answer": 0},
+        {"question": "¿Qué priorizan los mass media?", "options": ["Reflexión interna", "Visualidad", "Texto"], "answer": 1},
+        {"question": "¿Qué permite la lectura de novela?", "options": ["Exteriorización", "Experiencia introspectiva", "Señales ópticas"], "answer": 1},
+        {"question": "¿Qué son las señales ópticas en mass media?", "options": ["Complejas", "Inequívocas", "Internas"], "answer": 1}
+    ]},
+    {"title": "Evaluación 15: Modelo de Lasswell", "topic_id": 12, "questions": [
+        {"question": "¿Qué analiza el modelo de Lasswell?", "options": ["Transmisión técnica", "Comunicación masiva", "Interpersonal"], "answer": 1},
+        {"question": "¿Qué componente incluye el modelo?", "options": ["Ruido", "Efecto", "Codificador"], "answer": 1},
+        {"question": "¿Qué identifica el modelo?", "options": ["Solo emisor", "Comunicador, contenido, medio, receptor, impacto", "Ruido"], "answer": 1},
+        {"question": "¿Qué no explica en detalle el modelo?", "options": ["Componentes", "El proceso", "Efecto"], "answer": 1},
+        {"question": "¿Para qué es útil el modelo?", "options": ["Comunicación interpersonal", "Estudiar medios masivos", "Transmisión técnica"], "answer": 1}
+    ]},
+    {"title": "Evaluación 16: Teoría de la Agenda Setting", "topic_id": 13, "questions": [
+        {"question": "¿Qué establecen los medios según esta teoría?", "options": ["Qué pensar", "Qué pensar sobre", "Cómo pensar"], "answer": 1},
+        {"question": "¿Qué complementa la agenda setting?", "options": ["Framing", "Espiral del silencio", "Usos y gratificaciones"], "answer": 0},
+        {"question": "¿Qué influye en la percepción pública?", "options": ["Contenido específico", "Agenda de temas", "Opiniones personales"], "answer": 1},
+        {"question": "¿Cómo determinan los medios la presentación?", "options": ["Aleatoriamente", "Framing", "Sin importancia"], "answer": 1},
+        {"question": "¿Qué no dicen los medios directamente?", "options": ["Qué pensar sobre", "Qué pensar", "Información"], "answer": 1}
+    ]},
+    {"title": "Evaluación 17: Teoría de la Espiral del Silencio", "topic_id": 15, "questions": [
+        {"question": "¿Qué evita esta teoría?", "options": ["Opiniones mayoritarias", "Expresar minorías", "Comunicación"], "answer": 1},
+        {"question": "¿Qué crea la espiral?", "options": ["Fuerza mayoritaria", "Silencio de minorías", "Ambas"], "answer": 2},
+        {"question": "¿Qué miedo causa el silencio?", "options": ["Aislamiento social", "Comunicación excesiva", "Opiniones mayoritarias"], "answer": 0},
+        {"question": "¿Qué se refuerzan en la espiral?", "options": ["Opiniones minoritarias", "Opiniones mayoritarias", "Comunicación interpersonal"], "answer": 1},
+        {"question": "¿En qué contextos es relevante?", "options": ["Comunicación técnica", "Opinión pública", "Transmisión"], "answer": 1}
+    ]},
+    {"title": "Evaluación 18: Teoría Hipodérmica", "topic_id": 16, "questions": [
+        {"question": "¿Cómo inyectan mensajes los medios?", "options": ["Como bala mágica", "Gradualmente", "Bidireccionalmente"], "answer": 0},
+        {"question": "¿Qué explica esta teoría?", "options": ["Pánico inicial", "Uso actual", "Dependencia"], "answer": 0},
+        {"question": "¿Qué causa la teoría?", "options": ["Efectos graduales", "Efectos inmediatos", "Efectos a largo plazo"], "answer": 1},
+        {"question": "¿Qué fue desmentida?", "options": ["Teoría de agenda setting", "Teoría hipodérmica", "Teoría de usos"], "answer": 1},
+        {"question": "¿Qué destaca la teoría?", "options": ["Interactividad", "Influencia de propaganda", "Recepción activa"], "answer": 1}
+    ]},
+    {"title": "Evaluación 19: Teoría de la Dependencia", "topic_id": 17, "questions": [
+        {"question": "¿Qué crea poder social?", "options": ["Dependencia de medios", "Independencia", "Tecnología"], "answer": 0},
+        {"question": "¿Cuándo aumenta la dependencia?", "options": ["En crisis", "Siempre", "Nunca"], "answer": 0},
+        {"question": "¿Qué satisface la dependencia?", "options": ["Necesidades técnicas", "Necesidades", "Tecnología"], "answer": 1},
+        {"question": "¿Qué pueden influir los medios en crisis?", "options": ["Solo información", "Actitudes y comportamientos", "Tecnología"], "answer": 1},
+        {"question": "¿Qué teoría propone Ball-Rokeach?", "options": ["Agenda Setting", "Dependencia de los Medios", "Espiral del Silencio"], "answer": 1}
+    ]},
+    {"title": "Evaluación 20: Historia de la Comunicación", "topic_id": 20, "questions": [
+        {"question": "¿Qué representa la industria cultural según Adorno?", "options": ["Marco crítico para medios", "Colección de productos artísticos", "Sistema de mercantilización"], "answer": 2},
+        {"question": "¿Qué prioriza la industria cultural sobre la expresión genuina?", "options": ["Demanda del mercado", "Integridad artística", "Cambio social"], "answer": 0},
+        {"question": "¿Qué cultiva la industria cultural entre audiencias?", "options": ["Pasividad y conformidad", "Pensamiento crítico", "Diversidad intelectual"], "answer": 0},
+        {"question": "¿Cómo se relaciona con el capitalismo industrial?", "options": ["Se opone a él", "Es una extensión", "Es independiente"], "answer": 1},
+        {"question": "¿Qué reemplaza la industria cultural?", "options": ["Diálogo significativo", "Espectáculos superficiales", "Iluminación"], "answer": 1}
+    ]},
+    {"title": "Evaluación 21: La Industria Cultural", "topic_id": 21, "questions": [
+        {"question": "¿Qué son los mensajes latentes según Adorno?", "options": ["Narrativas evidentes", "Significados ocultos subconscientes", "Información explícita"], "answer": 1},
+        {"question": "¿Cómo operan los mensajes latentes?", "options": ["Por encima de la superficie", "Por debajo de la superficie", "Siempre contradictorios"], "answer": 1},
+        {"question": "¿Por qué son efectivos los mensajes latentes?", "options": ["Requieren atención consciente", "Eluden escrutinio racional", "Son fácilmente detectados"], "answer": 1},
+        {"question": "¿Qué fomentan los mensajes latentes?", "options": ["Pensamiento crítico", "Normas sociales y valores", "Disenso"], "answer": 1},
+        {"question": "¿Qué es necesario para decodificar mensajes latentes?", "options": ["Visualización pasiva", "Alfabetización mediática", "Análisis económico"], "answer": 1}
+    ]},
+    {"title": "Evaluación 22: Técnicas de Manipulación Mediática", "topic_id": 23, "questions": [
+        {"question": "¿Cuál es una técnica clave de manipulación?", "options": ["Mensajes multiestratificados", "Pensamiento crítico", "Disenso"], "answer": 0},
+        {"question": "¿Cómo seduce la industria cultural a las audiencias?", "options": ["Narrativas complejas", "Ilusión de elección", "Contenido transparente"], "answer": 1},
+        {"question": "¿Qué produce la mediocridad en los medios?", "options": ["Compromiso intelectual", "Inercia crítica", "Diversidad"], "answer": 1},
+        {"question": "¿Qué priorizan los imperativos económicos?", "options": ["Calidad sobre ganancia", "Ganancia sobre calidad", "Ambos"], "answer": 1},
+        {"question": "¿Qué se necesita para contrarrestar la manipulación?", "options": ["Consumo pasivo", "Desarrollo de conciencia", "Ignorar fuentes"], "answer": 1}
+    ]},
+    {"title": "Evaluación 23: Televisión y Exteriorización", "topic_id": 24, "questions": [
+        {"question": "¿Qué significa exteriorización en televisión?", "options": ["Promover reflexión interna", "Desplazamiento a espectáculos externos", "Interpretación personal"], "answer": 1},
+        {"question": "¿Cómo difiere la televisión de leer una novela?", "options": ["Monólogo interno", "Señales visuales", "Profundidad de matices"], "answer": 1},
+        {"question": "¿Qué impacto tiene la exteriorización?", "options": ["Mejora la intimidad", "Lleva a alienación", "Promueve participación"], "answer": 1},
+        {"question": "¿Cómo facilita la exteriorización el consumo masivo?", "options": ["Reduce ideas complejas", "Aumenta complejidad", "Fomenta divergencia"], "answer": 0},
+        {"question": "¿Qué se necesita para contrarrestar la exteriorización?", "options": ["Aceptar realidades mediadas", "Fomentar diálogo interno", "Priorizar inmediatez"], "answer": 1}
+    ]},
+    {"title": "Evaluación 24: Inercia Intelectual y Credulidad", "topic_id": 25, "questions": [
+        {"question": "¿Qué es la inercia intelectual?", "options": ["Pensamiento crítico activo", "Estagnación del pensamiento", "Promoción de análisis"], "answer": 1},
+        {"question": "¿Cómo afecta la credulidad a las audiencias?", "options": ["Fomenta escepticismo", "Cultiva credulidad", "Promueve indagación"], "answer": 1},
+        {"question": "¿Qué mantiene la inercia intelectual?", "options": ["Contenido desafiante", "Producción de mediocridad", "Patrones disruptivos"], "answer": 1},
+        {"question": "¿Cómo se reproducen tendencias totalitarias?", "options": ["Abiertamente", "Bajo apariencia democrática", "Desalentadas"], "answer": 1},
+        {"question": "¿Qué es esencial para combatir la inercia?", "options": ["Visualización pasiva", "Alfabetización mediática crítica", "Narrativas simplistas"], "answer": 1}
+    ]},
+    {"title": "Evaluación 25: Mensajes Latentes en los Medios", "topic_id": 22, "questions": [
+        {"question": "¿Qué son los mensajes latentes?", "options": ["Mensajes evidentes", "Significados ocultos", "Canales de comunicación"], "answer": 1},
+        {"question": "¿Cómo operan los mensajes latentes?", "options": ["Conscientemente", "Subconscientemente", "Solo manifiestamente"], "answer": 1},
+        {"question": "¿Qué eluden los mensajes latentes?", "options": ["El control racional", "La audiencia", "Los productores"], "answer": 0},
+        {"question": "¿Qué pueden contradecir los mensajes latentes?", "options": ["Los mensajes manifiestos", "Los canales", "Los receptores"], "answer": 0},
+        {"question": "¿Qué requiere analizar mensajes latentes?", "options": ["Enfoque superficial", "Enfoque crítico", "Enfoque técnico"], "answer": 1}
+    ]},
 ]
 
 for quiz_data in quizzes_data:
     topic = Topic.objects.get(id=quiz_data['topic_id'])
     quiz, created = Quiz.objects.get_or_create(title=quiz_data['title'], defaults={'topic': topic})
     for q in quiz_data['questions']:
-        Question.objects.get_or_create(quiz=quiz, question_text=q['question'], defaults={
-            'option1': q['options'][0],
-            'option2': q['options'][1],
-            'option3': q['options'][2],
-            'correct_answer': q['answer'] + 1
-        })
+        question, created = Question.objects.get_or_create(quiz=quiz, question_text=q['question'], defaults={'option1': '', 'option2': '', 'option3': '', 'correct_answer': 1})
+        question.option1 = q['options'][0]
+        question.option2 = q['options'][1]
+        question.option3 = q['options'][2]
+        question.correct_answer = q['answer'] + 1
+        question.save()
 
 print("Data populated")

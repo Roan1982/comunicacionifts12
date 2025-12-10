@@ -13,24 +13,26 @@
             <div class="progress-bar" role="progressbar" style="width: {{ progress_percentage }}%;" aria-valuenow="{{ completed_topics|length }}" aria-valuemin="0" aria-valuemax="{{ topics|length }}">{{ completed_topics|length }}/{{ topics|length }}</div>
         </div>
     </div>
-    <div class="accordion" id="topicsAccordion">
+    <div class="row">
         {% for topic in topics %}
-            <div class="accordion-item topic-item" data-title="{{ topic.title|lower }}" data-content="{{ topic.content|lower }}">
-                <h2 class="accordion-header" id="heading{{ topic.id }}">
-                    <button class="accordion-button {% if not forloop.first %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ topic.id }}" aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}" aria-controls="collapse{{ topic.id }}">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 {% if topic.id in completed_topics %}border-success{% endif %}">
+                    <div class="card-header">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" {% if topic.id in completed_topics %}checked{% endif %} onchange="toggleProgress({{ topic.id }})" id="check{{ topic.id }}">
-                            <label class="form-check-label ms-2" for="check{{ topic.id }}">
-                                {{ topic.title }}
+                            <label class="form-check-label" for="check{{ topic.id }}">
+                                <h5 class="card-title mb-0">{{ topic.title }}</h5>
                             </label>
                         </div>
-                    </button>
-                </h2>
-                <div id="collapse{{ topic.id }}" class="accordion-collapse collapse {% if forloop.first %}show{% endif %}" aria-labelledby="heading{{ topic.id }}" data-bs-parent="#topicsAccordion">
-                    <div class="accordion-body">
-                        <p>{{ topic.content }}</p>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">{{ topic.content|truncatechars:150 }}</p>
+                    </div>
+                    <div class="card-footer">
                         {% if topic.quiz_set.exists %}
-                            <a href="{% url 'quiz' topic.quiz_set.first.id %}" class="btn btn-outline-primary">Tomar Quiz</a>
+                            <a href="{% url 'quiz' topic.quiz_set.first.id %}" class="btn btn-primary">Tomar Quiz</a>
+                        {% else %}
+                            <span class="text-muted">Quiz próximamente</span>
                         {% endif %}
                     </div>
                 </div>
